@@ -1,0 +1,22 @@
+.App {
+  width: 100%;
+}
+
+.Container {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Left {
+  width: 50%;
+}
+
+.Right {
+  /* width: 50%; */
+}
+
+.clearfix {
+  clear: both;
+}
