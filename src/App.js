@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import UseState from "./Containers/UseState";
-import UseEffect from "./Containers/UseEffect";
+import UseEffectWithoutSubscription from "./Containers/UseEffectWithoutSubscription";
+import UseEffectWithDependency from "./Containers/UseEffectWithDependency";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
@@ -16,6 +17,18 @@ function App() {
               </li>
               <li>
                 <Link to="/useEffect">useEffect</Link>
+                <ul>
+                  <li>
+                    <Link to="/useEffect/noSubscription">useEffect without subscription</Link>
+
+                  </li>
+                  <li>
+                    <Link to="/useEffect/subscription">useEffect with subscription</Link>
+                  </li>
+                  <li>
+                    <Link to="/useEffect/dependency">useEffect with dependency</Link>
+                  </li>
+                </ul>
               </li>
             </ul>
           </nav>
@@ -26,9 +39,15 @@ function App() {
             <Route path="/useState">
               <UseState/>
             </Route>
-            <Route path="/useEffect">
-              <UseEffect/>
+            <Route path="/useEffect/dependency">
+              <UseEffectWithDependency/>
             </Route>
+            <Route path="/useEffect/noSubscription">
+              <UseEffectWithoutSubscription/>
+            </Route>
+            {/* <Route path="/useEffect">
+              <UseEffect/>
+            </Route> */}
           </Switch>
         </div>
       </Router>
