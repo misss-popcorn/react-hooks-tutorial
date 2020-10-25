@@ -1,8 +1,11 @@
 import React from "react";
 import "./App.css";
 import UseState from "./Containers/UseState";
+import UseEffectWithSubscription from "./Containers/UseEffectWithSubscription";
 import UseEffectWithoutSubscription from "./Containers/UseEffectWithoutSubscription";
 import UseEffectWithDependency from "./Containers/UseEffectWithDependency";
+import CustomHooksExample1 from "./Containers/CustomHooksExample1";
+import CustomHooksExample2 from "./Containers/CustomHooksExample2";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
@@ -30,6 +33,12 @@ function App() {
                   </li>
                 </ul>
               </li>
+              <li>
+                <Link to="/customHooks/example1">customHooks - example 1</Link>
+              </li>
+              <li>
+                <Link to="/customHooks/example2">customHooks - example 2</Link>
+              </li>
             </ul>
           </nav>
 
@@ -45,9 +54,15 @@ function App() {
             <Route path="/useEffect/noSubscription">
               <UseEffectWithoutSubscription/>
             </Route>
-            {/* <Route path="/useEffect">
-              <UseEffect/>
-            </Route> */}
+            <Route path="/useEffect/subscription">
+              <UseEffectWithSubscription/>
+            </Route>
+            <Route path="/customHooks/example1">
+              <CustomHooksExample1/>
+            </Route>
+            <Route path="/customHooks/example2">
+              <CustomHooksExample2/>
+            </Route>
           </Switch>
         </div>
       </Router>
