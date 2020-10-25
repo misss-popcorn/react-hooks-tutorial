@@ -1,7 +1,8 @@
+import React from "react";
 import "./App.css";
-import UseState from "./UseState";
-import UseEffect from "./UseEffect";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import UseState from "./Containers/UseState";
+import UseEffect from "./Containers/UseEffect";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
             renders the first one that matches the current URL. */}
           <Switch>
             <Route path="/useState">
-              <UseState />
+              <UseState/>
             </Route>
             <Route path="/useEffect">
-              <UseEffect />
+              <UseEffect/>
             </Route>
           </Switch>
         </div>
