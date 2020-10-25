@@ -14,7 +14,7 @@ export function PlainHook() {
 
   return (
     <span className="Left">
-      <p>Function Component</p>
+      <p>Built-in Hooks</p>
       <input value={name} onChange={handleChange}></input>
     </span>
   );

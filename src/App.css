@@ -10,11 +10,13 @@
 }
 
 .Left {
+  text-align: center;
   width: 50%;
 }
 
 .Right {
-  /* width: 50%; */
+  text-align: center;
+  width: 50%;
 }
 
 .clearfix {

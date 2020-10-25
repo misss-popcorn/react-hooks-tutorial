@@ -12,7 +12,7 @@ export function CustomHook() {
 
   return (
     <span className="Right">
-      <p>Function Component</p>
+      <p>Custom Hooks</p>
       <input value={name} onChange={handleChange}></input>
     </span>
   );

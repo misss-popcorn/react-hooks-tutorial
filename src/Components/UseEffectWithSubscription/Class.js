@@ -3,7 +3,7 @@ import React from "react";
 export default class UseEffectClass extends React.Component {
   constructor() {
     super();
-
+    this.interval = 0;
     this.state = {
       count: 0
     };
@@ -18,7 +18,7 @@ export default class UseEffectClass extends React.Component {
     }, 1000);
   }
 
-  componentWillUnMount() {
+  componentWillUnmount() {
     clearInterval(this.interval);
   }
 

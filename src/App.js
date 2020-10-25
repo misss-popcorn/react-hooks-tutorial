@@ -19,10 +19,10 @@ function App() {
                 <Link to="/useState">useState</Link>
               </li>
               <li>
-                <Link to="/useEffect">useEffect</Link>
+                useEffect
                 <ul>
                   <li>
-                    <Link to="/useEffect/noSubscription">useEffect without subscription</Link>
+                    <Link to="/useEffect/noSubscription/noDependency">Simple useEffect</Link>
 
                   </li>
                   <li>
@@ -51,7 +51,7 @@ function App() {
             <Route path="/useEffect/dependency">
               <UseEffectWithDependency/>
             </Route>
-            <Route path="/useEffect/noSubscription">
+            <Route path="/useEffect/noSubscription/noDependency">
               <UseEffectWithoutSubscription/>
             </Route>
             <Route path="/useEffect/subscription">
