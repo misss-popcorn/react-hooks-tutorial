@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from "react";
 
 export function UseEffectFunc() {
-  const [name,
-    setName] = useState("");
-  const [textColor,
-    setTextColor] = useState("white");
+  const [name, setName] = useState("");
+  const [textColor, setTextColor] = useState("white");
 
   useEffect(() => {
     const ColorCode = "rgb(" + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random() * 256)) + "," + (Math.floor(Math.random() * 256)) + ")";
