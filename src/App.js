@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import UseState from "./Containers/UseState";
 import UseEffectWithSubscription from "./Containers/UseEffectWithSubscription";
-import UseEffectWithoutSubscription from "./Containers/UseEffectWithoutSubscription";
+import SimpleUseEffectHook from "./Containers/SimpleUseEffectHook";
 import UseEffectWithDependency from "./Containers/UseEffectWithDependency";
 import CustomHooksExample1 from "./Containers/CustomHooksExample1";
 import CustomHooksExample2 from "./Containers/CustomHooksExample2";
@@ -22,7 +22,7 @@ function App() {
                 useEffect
                 <ul>
                   <li>
-                    <Link to="/useEffect/noSubscription/noDependency">Simple useEffect</Link>
+                    <Link to="/useEffect/noSubscription/noDependency">Simple useEffect ( Without subscription and dependency )</Link>
 
                   </li>
                   <li>
@@ -52,7 +52,7 @@ function App() {
               <UseEffectWithDependency/>
             </Route>
             <Route path="/useEffect/noSubscription/noDependency">
-              <UseEffectWithoutSubscription/>
+              <SimpleUseEffectHook/>
             </Route>
             <Route path="/useEffect/subscription">
               <UseEffectWithSubscription/>
